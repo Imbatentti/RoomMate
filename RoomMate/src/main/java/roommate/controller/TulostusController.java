@@ -14,7 +14,7 @@ import roommate.dao.KayttajaDAO;
 
 
 @Controller
-@RequestMapping(value ="/nayta")
+@RequestMapping(value ="/")
 public class TulostusController {
 	
 	@Inject
