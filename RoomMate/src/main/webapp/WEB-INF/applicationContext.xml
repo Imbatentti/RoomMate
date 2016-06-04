@@ -13,13 +13,13 @@
 	<!-- SPRING MVC MÄÄRITYKSET -->
 
 	<mvc:resources mapping="/resources/**" location="/resources/" />
-	<context:component-scan base-package="fi.softala.tunnit" />
+	<context:component-scan base-package="roommate" />
 	<mvc:annotation-driven />
 
 
 	<!-- Etusivun määritys -->
 
-	<mvc:view-controller path="/" view-name="Login" />
+	<mvc:view-controller path="/" view-name="login" />
 
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
@@ -31,7 +31,7 @@
 
 	<context:property-placeholder location="classpath*:/db_connection.properties" />
 
-	<bean id="daoLuokka" class="fi.softala.tunnit.dao.KayttajaDAOSpringJdbcImpl">
+	<bean id="daoLuokka" class="roommate.dao.KayttajaDAOSpringJdbcImpl">
 		<property name="dataSource" ref="dataSource" />
 	</bean>
 

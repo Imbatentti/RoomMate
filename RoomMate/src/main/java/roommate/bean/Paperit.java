@@ -1,4 +1,4 @@
-package bean;
+package roommate.bean;
 
 public class Paperit {
 	private String paperit_id;
